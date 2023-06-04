@@ -49,11 +49,11 @@ class _SplashScreenState extends State<SplashScreen>
             AnimatedBuilder(
                 animation: _controller,
                 child: Container(
-                  height: 200,
-                  width: 200,
+                  height: 400,
+                  width: 300,
                   child: const Center(
                       child: Image(
-                    image: AssetImage('images/teeshop.png'),
+                    image: AssetImage('images/tb.jpg'),
                   )),
                 ),
                 builder: (BuildContext context, Widget? child) {
@@ -64,30 +64,30 @@ class _SplashScreenState extends State<SplashScreen>
                   );
                 }),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.08,
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             const Column(children: [
              Align(
                 alignment: Alignment.center,
                 child: Text(
-                  " Welcome to Tee's shop  ",
+                  " Welcome to Vegatable's shop  ",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       //fontWeight: FontWeight.bold,
                       fontFamily: 'Courgette',
                       fontSize: 25,
-                      color: Colors.deepPurple),
+                      color: Colors.green),
                 )),
 
                 Align(
                 alignment: Alignment.center,
                 child: Text(
-                  " Simple - Shirt - Style ",
+                  " Clean - Fresh - Eat ",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
-                      color: Colors.deepPurple),
+                      color: Colors.green),
                 )),
             ],),
             
